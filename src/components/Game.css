@@ -1,0 +1,94 @@
+.home {
+  height: 85vh;
+  background-color: rgb(23, 245, 252);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 10px;
+}
+
+.score {
+  text-align: center;
+  display: block;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.background {
+  background-image: url("./media/Background.jpg");
+  background-repeat: no-repeat;
+  background-size: 400px 600px;
+  width: 400px;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid black;
+}
+
+.background.start {
+  cursor: pointer;
+}
+
+.bird {
+  position: absolute;
+  background-image: url("./media/cheese.webp");
+  background-repeat: no-repeat;
+  background-size: 50px 30px;
+  width: 50px;
+  height: 30px;
+  left: 20%;
+}
+
+.obj {
+  position: absolute;
+  background-image: url("./media/baguette.png");
+  background-size: cover;
+  width: 52px;
+  height: 0;
+}
+
+.obj.top {
+  transform: scaleY(-1);
+}
+
+.startboard {
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("./media/fr.png");
+  text-shadow: 2px 2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
+    -2px -2px 0 black, 2px 0px 0 black, 0px 2px 0 black, -2px 0px 0 black,
+    0px -2px 0 black;
+  color: white;
+  background-size: contain;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.gameover {
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("./media/fr.png");
+  text-shadow: 2px 2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
+    -2px -2px 0 black, 2px 0px 0 black, 0px 2px 0 black, -2px 0px 0 black,
+    0px -2px 0 black;
+  color: white;
+  background-size: contain;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}

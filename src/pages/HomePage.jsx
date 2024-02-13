@@ -1,5 +1,16 @@
+import { Container, Image } from "react-bootstrap";
+import "./Home.css";
+import birdyImage from "../assets/birdy.jpg";
+
 const HomePage = () => {
-  return <div>HomePage</div>;
+  return (
+    <Container className="d-flex flex-column justify-content-center align-items-center mt-4">
+      <h2> Bienvenue, Welcome to Frenchy Bird</h2>
+      <Container className="imgCont">
+        <Image width="400px" src={birdyImage} className="" />
+      </Container>
+    </Container>
+  );
 };
 
 export default HomePage;
