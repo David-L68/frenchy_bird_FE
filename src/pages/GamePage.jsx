@@ -1,10 +1,12 @@
+import { Container } from "react-bootstrap";
 import Game from "../components/Game";
 
 const GamePage = () => {
   return (
-    <div>
+    <Container className="d-flex flex-column justify-content-center">
+      <h4 className="align-self-center">Frenchy Bird</h4>
       <Game />
-    </div>
+    </Container>
   );
 };
 

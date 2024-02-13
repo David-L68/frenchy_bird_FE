@@ -7,9 +7,11 @@ import "./NavBar.css";
 
 const NavBar = () => {
   return (
-    <Navbar className="nav" bg="info" data-bs-theme="light">
+    <Navbar className="nav rounded" bg="secondary" data-bs-theme="light">
       <Container className="">
-        <Navbar.Brand href="/">Home Page</Navbar.Brand>
+        <Navbar.Brand className="text-bg-secondary" href="/">
+          Home Page
+        </Navbar.Brand>
         <Nav className="me-auto">
           <Button className="mx-3" href="/signup" variant="danger">
             Sign Up
