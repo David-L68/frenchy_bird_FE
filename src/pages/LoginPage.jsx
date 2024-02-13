@@ -38,14 +38,14 @@ const LoginPage = () => {
         localStorage.setItem("Nickname", res.data.nickname);
         localStorage.setItem("Score", res.data.score);
         setIsAuthenticated(true);
-        navigate("/home");
+        navigate("/play");
       }
     } catch (err) {
       console.error("An error occurred during login:", err);
     }
   };
   return (
-    <div id="Parent-conatainer" className="d-flex">
+    <Container id="Parent-conatainer" className="d-flex flex-column loginCont">
       {/* <div>
           <img src={bird} id="image" />
         </div> */}
@@ -83,7 +83,7 @@ const LoginPage = () => {
           </div>
         </Form>
       </Container>
-    </div>
+    </Container>
   );
 };
 

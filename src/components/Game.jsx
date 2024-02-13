@@ -9,7 +9,7 @@ const GRAVITY = 1;
 const JUMP_STRENGTH = 15;
 const OBJ_WIDTH = 52;
 const OBJ_GAP = 200;
-const OBJ_SPEED = 10;
+const OBJ_SPEED = 8;
 
 function Game() {
   const [isStart, setIsStart] = useState(false);

@@ -2,6 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 import { Form, Button, Container } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
+import "./SignUp.css";
 
 const SignupPage = () => {
   const [lastName, setLastName] = useState("");
@@ -46,7 +47,7 @@ const SignupPage = () => {
   };
 
   return (
-    <Container className="d-flex flex-column">
+    <Container className="d-flex flex-column signupCont">
       <Container className="my-3">
         <h3 className="font-weight-normal">Sign-Up To Frenchy Bird</h3>
       </Container>
