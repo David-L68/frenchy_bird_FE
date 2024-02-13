@@ -31,20 +31,26 @@ const NavBar = () => {
           <Button href="/login" variant="danger">
             Login
           </Button>
-          <Button className="mx-3" href="/play" variant="danger">
-            Play Frenchy-Bird
-          </Button>
-          <Button className="me-3" href="/scores" variant="danger">
-            High Scores
-          </Button>
-          <Button
-            onClick={handleLogOut}
-            className="mx-5"
-            href="/play"
-            variant="success"
-          >
-            Log out
-          </Button>
+          {isAuthenticated && (
+            <Button className="mx-3" href="/play" variant="danger">
+              Play Frenchy-Bird
+            </Button>
+          )}
+          {isAuthenticated && (
+            <Button className="me-3" href="/scores" variant="danger">
+              High Scores
+            </Button>
+          )}
+          {isAuthenticated && (
+            <Button
+              onClick={handleLogOut}
+              className="mx-5"
+              href="/play"
+              variant="success"
+            >
+              Log out
+            </Button>
+          )}
         </Nav>
       </Container>
     </Navbar>
